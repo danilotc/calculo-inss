@@ -31,10 +31,6 @@ Alguns métodos utilizam diferentes formas de calcular e exibir o resultado, por
 
 ```python
 def trunca_decimal(valor, decimal):
-    """
-    Recebe o valor do INSS a ser pago e a quantidade de casas decimais desejada,
-    retorna o mesmo valor truncado com 2 casas decimais não arredondadas.
-    """
     lista = str(valor).split('.')
     return float('.'.join([lista[0], lista[1][:decimal]]))
 ```
