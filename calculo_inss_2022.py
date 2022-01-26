@@ -6,7 +6,7 @@ def trunca_decimal(valor, decimal):
     lista = str(valor).split('.')
     return float('.'.join([lista[0], lista[1][:decimal]]))
 
-
+# Obtendo salário via teclado para cálculo
 salario = float(input("Informe o Salário: R$ "))
 valor_inss = 0.0
 
