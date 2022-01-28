@@ -1,12 +1,13 @@
 # Importando módulos necessários
 from trata_numero import trunca_decimal
-import tabela_inss_saida
+import tabela
+
 
 def inss(ano):
     """Recebe o ano com quatro dígitos, ex: 2022"""
 
     # Obtendo salário via teclado
-    salario = float(input("Salário base: R$ "))
+    salario = float(input("Salário bruto: R$ "))
     valor_inss = 0.0
     faixa_inss = 0
 
@@ -75,9 +76,9 @@ def inss(ano):
         faixa_inss = 4
 
     # Mostra o valor do INSS a ser pago com 2 casa decimais não arredondadas
-    print("\nCom o salário base de \033[34mR$ {0:.2f}\033[m o colaborador precisa pagar \033[34mR$ {1:.2f}\033[m ao INSS,".format(salario, trunca_decimal(valor_inss, 2)))
-    print("segundo a tabela de contribuição abaixo.")
+    print("\nCom o salário bruto de \033[34mR$ {0:.2f}\033[m o colaborador {1} ".format(salario, "precisou" if ano == 2021 else "precisa"))
+    print("pagar \033[34mR$ {1:.2f}\033[m de INSS, segundo a tabela de {0}.".format(ano, trunca_decimal(valor_inss, 2)))
 
     # Mostra a tabela de contribuição do ano escolhido realçando a faixa de
     # contribuição com base no salário informado.
-    tabela_inss_saida.mostrar(ano, faixa_inss)
+    tabela.mostrar(ano, faixa_inss)
