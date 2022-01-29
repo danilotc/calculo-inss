@@ -4,18 +4,22 @@ Com base na tabela oficial de cálculo dos valores a serem descontados para o se
 
 ## Como usar este programa?
 
-Ao rodar o programa será necessário informar dois valores: **ano** e **salário base**, como mostra o exemplo abaixo considerando a tabela vigente de 2022 e um salário de 6 mil reais.<br><br>
+Ao rodar o programa será necessário informar dois valores: **ano** e **salário base**, como mostra o exemplo abaixo considerando a tabela vigente de 2022 e um salário de 6 mil reais. A frase "colaborador **precisa**" muda de acordo com o ano escolhido, se escolher 2021 a concordância mudará para "colaborador **precisou**", pois é algo que já foi pago.
+<br>
 
-![Solicitação](https://raw.githubusercontent.com/danilotc/assets/master/solicitacao.png) <br><br>
+<p align="left">
+    <img src="https://raw.githubusercontent.com/danilotc/assets/master/solicitacao.png">
+</p>
 
-Em seguida, basta analisar o resultado que será impresso na tela, a tabela irá indicar a faixa em que o salário informado se enquadra, logo a porcentagem dessa faixa é a que está sendo calculada, como no exemplo a seguir. <br><br>
+Em seguida, basta analisar o resultado que será impresso na tela, a tabela irá indicar a faixa em que o salário informado se enquadra, logo a porcentagem dessa faixa é a que está sendo calculada, como no exemplo a seguir. <br>
 
-![Resultado texto](https://raw.githubusercontent.com/danilotc/assets/master/resultado1.png) <br>
-![Resultado tabela](https://raw.githubusercontent.com/danilotc/assets/master/resultado2.png) <br><br>
+<p align="left">
+    <img src="https://raw.githubusercontent.com/danilotc/assets/master/imaem3.png">
+</p>
 
 Este é o resultado do algoritmo funcionando. A fórmula utilizada para este cálculo específico é a seguinte:
 
-(6.000,00 - 3.641,04) x 14 / 100 + 345,92
+<p align="center">(6.000,00 - 3.641,04) x 14 / 100 + 345,92</p><br>
 
 ## O "x" da questão
 
@@ -25,19 +29,23 @@ Como mencionei o principal objetivo deste estudo foi tentar descobrir se o valor
 
 Considerando minha folha de pagamento do ano 2021, o desconto indicado foi de **R$ 88,06** que corresponde a 9% da alíquota sobre o salário base. Para realizar esse cálculo considerei o meu salário base de **R$ 1.161,78** e a resposta do algoritmo foi essa indicando exatamente o que estava sendo descontado na folha. <br><br>
 
-![Solicitação](https://raw.githubusercontent.com/danilotc/assets/master/solicitacao2.png) <br><br>
-![Resultado 3](https://raw.githubusercontent.com/danilotc/assets/master/resultado3.png) <br>
-![Resultado 4](https://raw.githubusercontent.com/danilotc/assets/master/resultado4.png) <br><br>
+<p align="left">
+    <img src="https://raw.githubusercontent.com/danilotc/assets/master/solicitacao2.png">
+</p>
+
+<p align="left">
+    <img src="https://raw.githubusercontent.com/danilotc/assets/master/imagem2.png">
+</p>
 
 O resultado acima é a resposta do programa que escrevi após estudar o cálculo que é utilizado para desconto do valor a ser pago ao INSS. Logo, como podemos observar, o valor descontado e a faixa em que o valor base se enquadra mostram que o desconto na folha de pagamento estava correto.
 
 Com isso, posso afirmar que não estava sendo descontado 7,5%, mas 9% visto que o salário base ultrapassa o salário mínimo do ano em questão.
 
 Para testar o funcionamento deste algoritmo clique na imagem abaixo.  Lembre-se apenas de utilizar `(.)` no lugar de `(,)` para separar os inteiros dos decimais.
-
+<br><br>
 <p align="center" size="10px">
-<a href="https://replit.com/@danilocastro5/calculoinss" target="_black"><img src="https://blog.replit.com/images/logo.png" width="200px"></a>
-</p>
+    <a href="https://replit.com/@danilocastro5/calculoinss" target="_black"><img src="https://blog.replit.com/images/logo.png" width="200px"></a>
+</p><br>
 
 
 ## Tabelas oficiais utilizadas
