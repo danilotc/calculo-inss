@@ -33,7 +33,7 @@ def inss(ano):
         min_faixa3 = 2203.49
         max_faixa3 = 3305.22
         # limite da faixa 4
-        min_faixa4 = 3305.22
+        min_faixa4 = 3305.23
         max_faixa4 = 6433.57
 
     # O percentual de cada alíquota é o mesmo para 2021 e 2022
