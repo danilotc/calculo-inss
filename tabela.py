@@ -1,4 +1,34 @@
-def mostrar(ano, faixa_contribuicao):
+def faixas_da_tabela(ano):
+    if ano == 2022:
+        limites_da_tabela = {
+            'salario_minimo': 1212.00,
+            # limite da faixa 2
+            'min_faixa2': 1212.01,
+            'max_faixa2': 2427.35,
+            # limite da faixa 3
+            'min_faixa3': 2427.36,
+            'max_faixa3': 3641.03,
+            # limite da faixa 4
+            'min_faixa4': 3641.04,
+            'max_faixa4': 7087.22
+        }
+    elif ano == 2021:
+        limites_da_tabela = {
+            'salario_minimo': 1100.00,
+            # limite da faixa 2
+            'min_faixa2': 1100.01,
+            'max_faixa2': 2203.48,
+            # limite da faixa 3
+            'min_faixa3': 2203.49,
+            'max_faixa3': 3305.22,
+            # limite da faixa 4
+            'min_faixa4': 3305.23,
+            'max_faixa4': 6433.57
+        }
+    return limites_da_tabela
+
+
+def mostrar_faixa(ano, faixa_contribuicao):
     if ano == 2022:
         if faixa_contribuicao == 1:
             print("|--------------------------------------------|")
