@@ -81,9 +81,7 @@ Alguns métodos utilizam diferentes formas de calcular e exibir o resultado, por
 ```python
 def trunca_decimal(valor, decimal):
     lista = str(valor).split('.')
-	inteiro = lista[0]
-	decimal = lista[1][:decimal]
-    return float('.'.join([inteiro, decimal]))
+    return float('.'.join([lista[0], lista[1][:decimal]]))
 ```
 
 Além disso, é importante observar as faixas setadas antes da sua utilização. Gostaria de realçar a quarta faixa. Com resultado *boleano* o trecho avalia se o salário está entre o valor mínimo e máximo da faixa 4 ou se é maior que ela. Em ambos os casos será aplicado alíquota de 14%.
