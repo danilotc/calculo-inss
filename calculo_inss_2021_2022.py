@@ -53,10 +53,22 @@ def inss(ano):
         else:
             valor_inss = ((salario - valor['max_faixa3']) * percentual_faixa4) + aliq_faixa3
         faixa_inss = 4
+    
+	# Pergunta se o usuário quer visualizar o resultado final com mais de duas casas decimais
+    mudar_decimal = str(input("\nModificar quantidade de decimal no resultado? [S/N] ")).upper()
+    if mudar_decimal == "S":
+        valor = input("Quantidade de decimal desejado: [ex: 2, 3, 4] ")
+        if valor.isdigit(): # se o valor digitado for numérico
+            qtd_decimal = int(valor)
+        else:
+            print("\033[31mValor inválido. Considerando 2 casas decimais.\033[m")
+            qtd_decimal = 2
+    else:
+        qtd_decimal = 2
 
     # Mostra o valor do INSS a ser pago com 2 casa decimais não arredondadas
     print("\nCom o salário bruto de \033[34mR$ {0:.2f}\033[m o colaborador {1} ".format(salario, "precisou" if ano == 2021 else "precisa"))
-    print("pagar \033[34mR$ {1:.2f}\033[m de INSS, segundo a tabela de {0}.".format(ano, trunca_decimal(valor_inss, 2)))
+    print("pagar \033[34mR$ {0}\033[m de INSS, segundo a tabela de {1}.".format(trunca_decimal(valor_inss, qtd_decimal), ano))
 
     # Mostra a tabela de contribuição do ano escolhido realçando a faixa de
     # contribuição com base no salário informado.
